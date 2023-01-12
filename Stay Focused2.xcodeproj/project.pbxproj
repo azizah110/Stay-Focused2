@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C04106AD2966CA39009F1F9D /* BlankPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04106AC2966CA39009F1F9D /* BlankPage.swift */; };
+		C041A7C6296F072D005717D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C041A7C8296F072D005717D4 /* Localizable.strings */; };
 		C0AF0C8D2966A1700092A51B /* Stay_Focused2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF0C8C2966A1700092A51B /* Stay_Focused2App.swift */; };
 		C0AF0C8F2966A1700092A51B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF0C8E2966A1700092A51B /* ContentView.swift */; };
 		C0AF0C912966A1710092A51B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0AF0C902966A1710092A51B /* Assets.xcassets */; };
@@ -14,6 +16,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C00EE69C296B29950042D4CD /* Stay-Focused2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Stay-Focused2-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C04106AC2966CA39009F1F9D /* BlankPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankPage.swift; sourceTree = "<group>"; };
+		C041A7C7296F072D005717D4 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C041A7C9296F0737005717D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C0AF0C892966A1700092A51B /* Stay Focused2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stay Focused2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AF0C8C2966A1700092A51B /* Stay_Focused2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stay_Focused2App.swift; sourceTree = "<group>"; };
 		C0AF0C8E2966A1700092A51B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +41,8 @@
 		C0AF0C802966A1700092A51B = {
 			isa = PBXGroup;
 			children = (
+				C041A7C8296F072D005717D4 /* Localizable.strings */,
+				C04106AC2966CA39009F1F9D /* BlankPage.swift */,
 				C0AF0C8B2966A1700092A51B /* Stay Focused2 */,
 				C0AF0C8A2966A1700092A51B /* Products */,
 			);
@@ -51,6 +59,7 @@
 		C0AF0C8B2966A1700092A51B /* Stay Focused2 */ = {
 			isa = PBXGroup;
 			children = (
+				C00EE69C296B29950042D4CD /* Stay-Focused2-Info.plist */,
 				C0AF0C8C2966A1700092A51B /* Stay_Focused2App.swift */,
 				C0AF0C8E2966A1700092A51B /* ContentView.swift */,
 				C0AF0C902966A1710092A51B /* Assets.xcassets */,
@@ -109,6 +118,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = C0AF0C802966A1700092A51B;
 			productRefGroup = C0AF0C8A2966A1700092A51B /* Products */;
@@ -126,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0AF0C942966A1710092A51B /* Preview Assets.xcassets in Resources */,
+				C041A7C6296F072D005717D4 /* Localizable.strings in Resources */,
 				C0AF0C912966A1710092A51B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,10 +150,23 @@
 			files = (
 				C0AF0C8F2966A1700092A51B /* ContentView.swift in Sources */,
 				C0AF0C8D2966A1700092A51B /* Stay_Focused2App.swift in Sources */,
+				C04106AD2966CA39009F1F9D /* BlankPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C041A7C8296F072D005717D4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C041A7C7296F072D005717D4 /* ar */,
+				C041A7C9296F0737005717D4 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C0AF0C952966A1710092A51B /* Debug */ = {
@@ -195,7 +219,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,6 +294,7 @@
 				DEVELOPMENT_TEAM = A6BB767LN4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Stay-Focused2-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +324,7 @@
 				DEVELOPMENT_TEAM = A6BB767LN4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Stay-Focused2-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
